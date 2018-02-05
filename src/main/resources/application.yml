@@ -1,0 +1,19 @@
+#spring:
+#  datasource:
+# connection props for the source db- MYSQL
+spring.datasource.driver: com.mysql.jdbc.Driver
+spring.datasource.url: jdbc:mysql://localhost:3306/test?useSSL=false
+spring.datasource.password: admin
+spring.datasource.username: admin
+
+# connection props for the source db- DENODO DB
+#spring.datasource.driver: com.denodo.vdp.jdbc.Driver
+#spring.datasource.url: jdbc:vdb://xxxxxxx:9999/database_name
+#spring.datasource.username: dbuser
+#spring.datasource.password: dbpsw!#
+
+# connection props for the target db- ORACLE
+spring.targetdatasource.driver: oracle.jdbc.driver.OracleDriver
+spring.targetdatasource.url: jdbc:oracle:thin:@localhost:1521:orcl
+spring.targetdatasource.password: scott
+spring.targetdatasource.username: scott
